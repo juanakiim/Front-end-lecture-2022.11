@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블 태그</title>
+    <style>
+        td { text-align: center; }
+    </style>
+</head>
+<body style="margin-left: 40px; margin-top: 40px;">
+    <h3>테이블 태그</h3>
+    <hr>
+    <table border="1"> <!-- 표의 테두리를 지정하는 속성 (border = "숫자") -->
+        <thead>
+            <tr>  <!--표에 행을 삽입하는 것 (tr)-->
+                <th></th> <!-- th : 표의 제목셀 (table heading)지정 -->
+                <th>월</th>
+                <th>화</th>
+                <th>수</th>
+                <th>목</th>
+                <th>금</th>
+                <th>토</th>
+            </tr>
+        </thead>
+        <tbody> <!--tbody는 생략가능-->
+            <tr> <!--td는 표의 일반셀 생성-->
+                <td>1교시</td>
+                <td rowspan="2">국어</td><!--rowspan 셀의 높이지정-->
+                <td>수학</td>
+                <td>과학</td>
+                <td>체육</td>
+                <td>미술</td>
+                <td>가정</td>
+            </tr>
+            <tr>
+                <td>2교시</td>
+                <td>과학</td>
+                <td colspan="2" >체육</td>
+                <td>음악</td>
+                <td>영어</td> <!--colspan 셀의 너비지정 -->
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
