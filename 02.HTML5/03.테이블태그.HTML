@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Tag</title>
+    <style>
+        td {text-align: center;}
+    </style>
+</head>
+<body style="margin-left: 40px; margin-top: 40px;">
+    <h3>테이블 태그</h3>
+    <hr>
+    <table border="1">
+        <thead><!--thead랑 tbody 생략이 가능함-->
+            <tr>
+                <th></th>
+                <th>월</th>
+                <th>화</th>
+                <th>수</th>
+                <th>목</th>
+                <th>금</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td1교시</td>
+            <td rowspan="2">영어</td>
+            <td>수학</td>
+            <td>과학</td>
+            <td colspan="2">체육</td>
+            <td>미술</td>
+        </tr>
+        <tr>
+            <td>2교시</td>
+            <td>미술</td>
+            <td>과학</td>
+            <td>영어</td>
+            <td>음악</td>
+            <td>체육</td>
+        </tr>
+        </tbody>
+    </table>
+<hr>
+<hr>
+<h4>연습문제</h4>
+<table border="3">
+<tr>
+    <td>이름</td>
+    <td>김예진 </td>
+    <td rowspan="3">&nbsp;&nbsp;사&nbsp;진&nbsp;&nbsp; </td>  <!--&nbsp
+        ; 강제공백삽입-->
+</tr>
+<tr>
+    <td>전화번호</td>
+    <td>010-9876-1234</td>
+</tr>
+<tr>
+    <td>email</td>
+    <td>yejinnn@email.com</td>
+</tr>
+<tr>
+    <td>주소</td>
+    <td colspan="2">서울특별시 광진구 능동로 209(군자동) 세종대학교</td>
+</tr>
+</table>
+</body>
+</html>
