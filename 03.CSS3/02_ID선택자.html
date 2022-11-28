@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID선택자</title>
+    <style>
+        /* overflow 항목 
+        1) visible : 기본 값, 넘칠 경우 컨텐츠가 상자 밖으로 보여짐.
+        2) hidden : 넘치는 부분은 잘려서 안보임
+        3) scroll : 스크롤바가 추가되어 스크롤가능.(가로, 세로 모두 추가 가능)
+        4) auto : 컨텐츠 량에 따라 스크롤바를 추가할지 자동으로 결정( 필요에 따라 가로, 세로 별도로 추가가능) */
+
+        #header {
+            width: 800px; margin: 0 auto; background-color: beige;  
+        }
+        #wrap {
+            width: 800px; margin: 0 auto; overflow: hidden;
+        }
+        #aside {
+            width: 300px; float: right; background-color: coral;
+        }
+        #content {
+            width: 300px; float: right; background: green;
+        }
+    </style>
+</head>
+<body style="margin-top: 40px; margin-left: 40px;">
+    <h3>ID 선택자</h3>
+    <hr>
+    <div id="header">
+        <h1>#header 태그</h1>
+    </div>
+    <div id="wrap">
+        <div id="aside">
+            <h1>#aside 태그</h1>
+        </div>
+        <div id="content">
+            <h1>#content태그</h1>
+        </div>
+    </div>
+</body>
+</html>
